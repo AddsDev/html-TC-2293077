@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion a JS</title>
+</head>
+
+<body>
+
+    <script>
+        // var variableX = 0; 
+        // let letY = 0;
+        // const constZ = 0;
+
+        // var num1 = 10
+        // var num2 = 3;
+
+        // //alert(num1+num2)
+        // var $num = 46;
+        // var _$num = 47;
+        // var $_a__$$$$_num = 89;
+
+        // //NO USAR
+        // //var 1uno = 10;
+        // //var 1_124;
+        // //var 1312 = 7484;
+
+        // var iva = 16;
+        // var total = 99.9;
+        // // alert(typeof(total))
+        // // alert(typeof(iva))
+        // //var nombres = 'C:\\Usurios\\Admin\\Docuemntos';//br
+
+        // var nombres = ['Adrian','Jeison','Jerson','Yeison','Camilo*2','Jessica','Ngel']
+
+        // var verdad = true //false
+
+        // //Operadores
+        // //Unarios
+        // //Incremento y decremento
+        // // alert(iva++) //16
+        // // alert(iva)//17
+        // // alert(++iva) //18
+        // // alert(iva)
+        // //Matematicos
+        // var suma = 12 + 2
+        // var resta = 20-2
+        // var mul = 2 * 4
+        // var div = 2 / 5
+        // var mod = 2 % 2
+
+        // //Relacionales
+        // var igual = 1 == 2
+        // var may = 1 > 2, men = 2 < 1;//>= <= !=
+
+        // //Condicionales
+        // // if(false){
+
+        // // }else if(true){
+        // //     alert('Ya no hay mas elif :C')
+        // // }else{
+
+        // // }
+        // //Repetitivas
+        // // for(var index=0;index < 10;index++){
+        // //     console.log(index)
+        // // }
+        // // for(var item in nombres){
+        // //     console.log(nombres[item])
+        // // }
+
+        // // alert(`${nombres[0]} ${iva}`.concat(" otro string") + " de otra manera")
+        // // var x = NaN;// null
+        // // alert(x)
+        // // alert(-10/0)
+        // const pi = 3.1416
+
+        // alert(pi)
+        // // alert(pi.toFixed())
+        // // alert(parseInt(pi))
+        // alert(pi.toFixed(1))
+
+        /**
+        Escribir un programa en el que se pregunte al usuario por una frase y una letra,
+        y muestre por pantalla el número de veces que aparece la letra en la frase.
+        */
+
+        const frase = "Lorem ipsum dolor sit amet consectetur adipisicing elit."+
+            "Deleniti, soluta?";
+        //alert(frase[4])
+        var letra = prompt('Ingrese la letra a buscar');
+        for (let item =0; item < frase;item++) {//let item in frase
+            if(frase[item] == letra)
+                console.log(`El innumero es [${item} - ${frase[item]}]`)
+        }
+
+    </script>
+
+</body>
+
+</html>
