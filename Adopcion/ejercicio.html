@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiCanino</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <select name="categorias" id="categorias">
+        <option value="#">Categoria 1</option>
+        <option value="#">Categoria 2</option>
+        <option value="#">Categoria 3</option>
+    </select>
+
+    <div class="flex-container">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://www.purina-latam.com/sites/g/files/auxxlc391/files/styles/social_share_large/public/purina-conoce-8-razones-de-un-perro-enojado-para-que-no-las-hagas-0.png?itok=7oB1ORMR">
+            <h1 class="title-card">Perro</h1>
+            <p class="des-card">El perro (Canis familiaris o Canis lupus familiaris, dependiendo de si se lo considera una especie por derecho propio o una subespecie del lobo),1 llamado perro doméstico o can, y en algunos lugares coloquialmente llamado chucho,tuso, choco, entre otros; es un mamífero carnívoro de la familia de los cánidos, que constituye una especie del género Canis.</p>
+            <button class="btn-card" onclick="calcular()">Ver mas</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://www.purina-latam.com/sites/g/files/auxxlc391/files/styles/social_share_large/public/01_%C2%BFQu%C3%A9-puedo-hacer-si-mi-gato-est%C3%A1-triste-.png?itok=w67Nhubc">
+            <h1 class="title-card">Gato</h1>
+            <p class="des-card">El gato doméstico (Felis silvestris catus), llamado popularmente gato, y de forma coloquial minino, michino, michi, micho, mizo, miz, morroño o morrongo, entre otros nombres, es un mamífero carnívoro de la familia Felidae. Es una subespecie domesticada por la convivencia con el ser humano.</p>
+            <button class="btn-card" onclick="calcular()">Ver mas</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://cdn.colombia.com/sdi/2020/10/01/cuales-son-5-tipos-hamster-se-pueden-domesticar-860782.jpg">
+            <h1 class="title-card">Hámster</h1>
+            <p class="des-card">Los cricetinos (Cricetinae) son una subfamilia de roedores, conocidos comúnmente como hámsteres (un germanismo). Se han identificado diecinueve especies actuales, agrupadas en siete géneros. La mayoría son originarias de Oriente Medio y del sureste de los Estados Unidos. Todas las especies se caracterizan por las bolsas expansibles, llamadas abazones, ubicadas en el interior de la boca y que van desde las mejillas hasta los hombros. Al ser muy fáciles de criar en cautividad, son ampliamente usados como animales de laboratorio y como mascotas.</p>
+            <button class="btn-card" onclick="calcular()">Ver mas</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://www.caracteristicas.co/wp-content/uploads/2018/09/lobo-1-e1580435761506.jpg">
+            <h1 class="title-card">Lobo</h1>
+            <p class="des-card">El lobo (Canis lupus) es una especie de mamífero placentario del orden de los carnívoros. El perro doméstico (Canis familiaris) se consideraba miembro de la misma especie según distintos indicios, la secuencia del ADN y otros estudios genéticos. Hoy en día se considera una especie distinta. El primer registro fósil data de hace ochocientos mil años. Antaño los lobos fueron abundantes y se distribuían por Norteamérica y Eurasia. Actualmente, por una serie de razones relacionadas con el hombre, los lobos habitan únicamente en una muy limitada porción del que antes fue su territorio.</p>
+            <button class="btn-card" onclick="calcular()">Ver mas</button>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="data:image/jpeg;base64,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">
+            <h1 class="title-card">Guacamaya</h1>
+            <p class="des-card">El guacamayo rojo, guacamayo macao o guacamayo bandera (Ara macao) es una especie de ave perteneciente a la familia de los psitácidos y ave nacional de Honduras. Además, es una de las nueve especies existentes del género Ara, del cual es una de las de mayor tamaño, pues llega a alcanzar 90,7 cm de longitud y 1 kg de peso. Se distingue por su plumaje de colores vivos, que es principalmente rojo escarlata, complementado con algunas plumas azules y amarillas con verde que inician desde las alas hasta su cola. Habita a lo largo de un amplio rango de distribución que abarca desde el sureste de México hasta las selvas pedemontanas del departamento de Cochabamba en el centro de Bolivia, en bosques húmedos tropicales cercanos a grandes corrientes de agua, a altitudes que van desde el nivel del mar hasta los 1000 msnm. Se reconocen dos subespecies: A. m. macao y A. m. cyanoptera.</p>
+            <button class="btn-card" onclick="calcular()">Ver mas</button>
+        </div>
+    </div>
+<script>
+    function calcular()
+{
+    var frase;
+    var letra;
+    var contador = 0;
+    frase = prompt("Quieres ver mas... ")
+    letra = prompt("Bueno esto es un alerta de prueba JAAAA")
+    for(encontrar in frase) {
+        if (frase[encontrar] == letra) {
+            contador += 1 
+        }
+    } 
+    var resultado = "La alerta es para solo una prueba.... XD"
+    alert(resultado)   
+}
+</script>
+<div class="flex-no-wrap">
+    <div class="card2">
+        <h1>0</h1>
+    </div>
+    <div class="card2">
+        <h1>1</h1>
+    </div>
+    <div id="x" class="card2" >
+        <h1>2</h1>
+    </div>
+    <div class="card2">
+        <h1>3</h1>
+    </div>
+    <div class="card2">
+        <h1>3</h1>
+    </div>
+    <div class="card2">
+        <h1>3</h1>
+    </div>
+    <div class="card2">
+        <h1>3</h1>
+    </div>
+    <div class="card2">
+        <h1>3</h1>
+    </div>
+    <div class="card2">
+        <h1>3</h1>
+    </div>
+    <div class="card2">
+        <h1>3</h1>
+    </div>
+    <div class="card2">
+        <h1>3</h1>
+    </div>
+    <div class="card2">
+        <h1>3</h1>
+    </div>
+    <div class="card2">
+        <h1>3</h1>
+    </div>
+    <div class="card2">
+        <h1>3</h1>
+    </div>
+    <div class="card2">
+        <h1>3</h1>
+    </div>
+</div>
+<div class="flex-center">
+    <div class="card">
+        <h2>Login</h2>
+        <input type="text"> <br>
+        <input type="password" name="" id=""> <br>
+        <button class="btn-card">Login</button>
+    </div>
+</div>
+</body>
+</html>

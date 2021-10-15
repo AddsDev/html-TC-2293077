@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+}
+.flex-no-wrap{
+    display: flex;
+    align-items: stretch;
+}
+.flex-container {
+    display: flex;
+    height: 800px;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    align-items: baseline;
+}
+.flex-center{
+    display: flex;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.card-img-top {
+    display:block;
+    margin:auto;
+    width: 100%;
+}
+.card {
+    background-color: #fafafa;
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+    margin: 5px;
+    max-width: 300px;
+    margin-top: 20px;
+}
+.card2 {
+    background-color: cadetblue;
+    width: 50px;
+    padding: 10px;
+    margin: 5px 10px;
+}
+
+.title-card {
+    color: black;
+    font-family: monospace ,Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.des-card{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding: 25px;
+}
+.btn-card {
+    padding: 5px;
+    color: royalblue;
+    border: 1px solid #fafafa;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #fafafa;
+    display: block;
+    margin: 0 auto;
+}
+@keyframes focus{
+    40%{ 
+        border: 1px solid navy;
+    }
+    100%{ 
+        border: 1px solid navy;
+    }
+}
+
+.btn-card:hover {
+    color: navy;
+    animation: focus 4s ease;
+}
+
+
+
