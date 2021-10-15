@@ -9,33 +9,43 @@ body{
 .flex-no-wrap{
     display: flex;
     align-items: stretch;
+    clear: both;
+    border: 1px solid;
 }
 .flex-container {
     display: flex;
-    height: 800px;
+    height: auto;
     /* flex-direction: row;
     flex-wrap: wrap; */
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-content: flex-start;
-    align-items: baseline;
+    align-items: flex-start;
+    clear: both;
 }
 .flex-center{
     display: flex;
-    height: 800px;
+    height: auto;
     justify-content: center;
     align-items: center;
     border: 1px solid black;
+    clear: both;
 }
 
 .card {
     background-color: #fafafa;
-    border: 1px solid gainsboro;
+    border: 1px solid lightslategray;
     border-radius: 3px;
     margin: 5px;
-    padding: 10px 15px;
-    width: 400px;
+    max-width: 300px;
     margin-top: 20px;
+    overflow: hidden;
+}
+
+.card img {
+    display: block;
+    border-radius: 3px 3px 0px 0px;
+    
 }
 .card2 {
     background-color: cadetblue;
@@ -60,6 +70,15 @@ body{
     border: 1px solid #fafafa;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: #fafafa;
+}
+
+.container-info{
+    border: 1px solid #111;
+}
+
+.card-body{
+    padding: 10px 15px;
+    
 }
 @keyframes focus{
     40%{ 
