@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+}
+.flex-no-wrap{
+    display: flex;
+    align-items: stretch;
+    clear: both;
+    border: 1px solid;
+}
+.flex-container {
+    display: flex;
+    height: auto;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    align-items: flex-start;
+    clear: both;
+}
+.flex-center{
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    clear: both;
+}
+
+.card {
+    background-color: #fafafa;
+    border: 1px solid lightslategray;
+    border-radius: 3px;
+    margin: 5px;
+    max-width: 300px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.card img {
+    display: block;
+    border-radius: 3px 3px 0px 0px;
+    
+}
+.card2 {
+    background-color: cadetblue;
+    width: 50px;
+    padding: 10px;
+    margin: 5px 10px;
+}
+
+.title-card {
+    color: black;
+    font-family: monospace ,Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+}
+.des-card{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.btn-card {
+    padding: 5px;
+    color: royalblue;
+    border: 1px solid #fafafa;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #fafafa;
+}
+
+.container-info{
+    border: 1px solid #111;
+}
+
+.card-body{
+    padding: 10px 15px;
+    
+}
+@keyframes focus{
+    40%{ 
+        border: 1px solid navy;
+    }
+    100%{ 
+        border: 1px solid navy;
+    }
+}
+
+.btn-card:hover {
+    color: navy;
+    animation: focus 4s ease;
+}
+.card:nth-child(5) {
+    order: 1;
+    flex-grow: 1;
+    
+}
+.card:nth-child(4) {
+    order: 5;
+    flex-grow: 1;
+}
+.card:nth-child(3) {
+    order: 2;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.card:nth-child(2) {
+    order: 4;
+    flex-grow: 3;
+}
+.card:nth-child(1) {
+    order: 3;
+    flex-grow: 3;
+}
+#x {
+    flex-shrink: 0;
+}
